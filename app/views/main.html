@@ -1,0 +1,35 @@
+<div class="api">
+	<h3>API</h3>
+	<div class="col-xs-12">
+		GET
+		POST
+	</div>
+	<div class="col-xs-12">
+<pre>
+{{ api.description }}
+
+### Table of Contents
+| API                     |         Purpose         |
+|-------------------------|:-----------------------:|
+
+</pre>
+	</div>
+</div>
+<div class="row">
+	<h3>Model</h3>
+	<a class="btn">Load Model</a>
+	<div class="col-sm-6">
+		<div class="row">
+			<input class="form-control" ng-model="model.name"/>
+			<div ng-repeat="property in model.properties">
+				<input class="form-control" ng-model="property.name"/>
+				<input class="form-control" ng-model="property.type"/>
+			</div>
+		</div>
+	</div>
+	<div class="col-sm-6">
+<pre>
+{{ model }} 
+</pre>
+	</div>
+</div>
